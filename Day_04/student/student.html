@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Loginpage</title>
+<style>
+.user{
+text-align:center;
+color:blue;
+}
+</style>
+</head>
+<body>
+<div class=login>
+<h2>Login</h2>
+<div class=user>
+ <form action="/submit-login" method="POST">
+<lable for="username">Username:</lable>
+<input type="text" id="username" name="username" required>
+</div><br>
+<div class=password>
+<lable for="password">Password:</lable>
+<input type="password" id="password" name="password" required>
+</div>
+<button type="submit" class="login-btn">Login</button>
+<button type="submit" class="singup-btn">Signup</button>
+  </div>
+</form>
+</body>
+</html>

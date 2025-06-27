@@ -1,0 +1,25 @@
+
+body{
+background:pink;
+border:2px solid Blue;
+}
+h1{
+border:2px solid darkpink;
+text-align:left;
+color:green;
+font-size:30;
+}
+p{
+border:2px solid navy;
+text-align:left;
+color:red;
+}
+tr{
+border:2px solid green;
+color:blue;
+}
+marquee{
+border:2px solid darkblue;
+}
+
+
