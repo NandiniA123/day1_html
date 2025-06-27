@@ -1,0 +1,84 @@
+<html>
+<head>
+<script>
+function add()
+{
+var num1,num2,sum;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+sum=num1+num2;
+document.getElementById("textAnswer").value=sum;
+}
+function sub()
+{
+var num1,num2,sub;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+sub=num1-num2;
+document.getElementById("textAnswer").value=sub;
+}
+function mul()
+{
+var num1,num2,mul;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+mul=num1*num2;
+document.getElementById("textAnswer").value=mul;
+}
+function div()
+{
+var num1,num2,div;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+div=num1/num2;
+document.getElementById("textAnswer").value=div;
+}
+function per()
+{
+var num1,num2,per;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+per=num1/num2*100;
+document.getElementById("textAnswer").value=per;
+}
+function clearScreen()
+{
+document.getElementById("textFirstNumber").value="";
+document.getElementById("textSecondNumber").value="";
+document.getElementById('textAnswer').value =""; 
+}
+</script>
+<style>
+table{
+background-color:#00ffff;
+}
+th{
+color:blue;
+}
+</style>
+</head>
+<body>
+<table border=0>
+<tr>
+<th align=left>First Number:</th>
+<td><input id="textFirstNumber"></td>
+</tr>
+<tr>
+<th align=left>Second Number:</th>
+<td><input id="textSecondNumber"></td>
+</tr>
+<tr>
+<th align=left>=</th>
+<td><input id="textAnswer"></td>
+</tr>
+<tr>
+<td align=center><button onclick="add()">+</button></td>
+<td align=center><button onclick="sub()">-</button></td>
+<td align=center><button onclick="mul()">*</button></td>
+<td align=center><button onclick="div()">/</button></td>
+<td align=center><button onclick="per()">%</button></td>
+<td align=center><button onclick="clearScreen()">Clear Them</button></td>
+</tr>
+</table>
+</body>
+</html>

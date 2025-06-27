@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Loginpage</title>
+</head>
+<body>
+<h3>Login Form</h3>
+<form form="login_form" onsubmit="submit_form()">
+<h4>USERNAME</h>
+<input type="text" placeholder="Enter your email id">
+<br>
+<h4>PASSWORD</h>
+<input type="password" placeholder="Enter your password">
+<br><br>
+<input type="submit" value="login">
+<input type="button" value="SignUp"
+onClick="submit_form()">
+</form>
+<script type="text/javascript">
+function submit_form(){
+alter("Login sucessfully");
+}
+function create(){
+window.location="signup.html"
+}
+</script>
+</body>
+</html>
